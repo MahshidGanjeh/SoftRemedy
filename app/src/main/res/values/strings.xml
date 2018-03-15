@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">DrugTracker</string>
+
+    <string name="title_pill_box">جعبه دارو</string>
+    <string name="title_encyclopedia">اطلاعات دارو</string>
+    <string name="title_graph_info">نمودار دارو</string>
+    <string name="title_drugstore"> داروخانه</string>
+    <string name="title_user">پروفایل</string>
+
+    <string name="morning_drug_box_text">صبح</string>
+    <string name="noon_drug_box_text">ظهر</string>
+    <string name="afternoon_drug_box_text">عصر</string>
+    <string name="night_drug_box_text">شب</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
