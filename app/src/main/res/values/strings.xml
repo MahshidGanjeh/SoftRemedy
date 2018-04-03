@@ -11,6 +11,18 @@
     <string name="noon_drug_box_text">ظهر</string>
     <string name="afternoon_drug_box_text">عصر</string>
     <string name="night_drug_box_text">شب</string>
+
+    <string name="drug_commercial_label">(نام تجاری:</string>
+
+    <string name="week_diagram_text">هفته</string>
+    <string name="week2_diagram_text">دو هفته</string>
+    <string name="month_diagram_text">ماه</string>
+    <string name="month3_diagram_text">سه ماه</string>
+    <string name="diabet_diagram_text">قند خون</string>
+    <string name="hypertension_diagram_text">فشار خون</string>
+    <string name="weight_diagram_text">وزن</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

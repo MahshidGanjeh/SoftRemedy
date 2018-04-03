@@ -1,128 +1,309 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.drugtracker.PillBoxFragment">
+    android:layout_height="wrap_content">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/morning_drug_box_card"
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp"
-        app:cardBackgroundColor="#4FC3F7"
-        app:cardCornerRadius="15dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.drugtracker.PillBoxFragment">
 
-        <android.support.constraint.ConstraintLayout
+        <android.support.v7.widget.CardView
+            android:id="@+id/morning_drug_box_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#4FC3F7"
+            app:cardCornerRadius="15dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
 
-            <TextView
-                android:id="@+id/morning_drug_box_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@string/morning_drug_box_text"
-                android:textColor="#FFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/pill1_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/noon_drug_box_card"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp"
-        app:cardBackgroundColor="#FF7043"
-        app:cardCornerRadius="15dp">
+                <ImageView
+                    android:id="@+id/capsule_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/pill1_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <android.support.constraint.ConstraintLayout
+                <ImageView
+                    android:id="@+id/syrup_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/capsule_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/morning_drug_box_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/morning_drug_box_text"
+                    android:textColor="#FFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/noon_drug_box_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#FF7043"
+            app:cardCornerRadius="15dp">
 
-            <TextView
-                android:id="@+id/noon_drug_box_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@string/noon_drug_box_text"
-                android:textColor="#FFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/drug1_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ampoule_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/drug1_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/pill2_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/ampoule_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/noon_drug_box_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/noon_drug_box_text"
+                    android:textColor="#FFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
 
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/afternoon_drug_box_card"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp"
-        app:cardBackgroundColor="#9575CD"
-        app:cardCornerRadius="15dp">
-
-        <android.support.constraint.ConstraintLayout
+        <android.support.v7.widget.CardView
+            android:id="@+id/afternoon_drug_box_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#9575CD"
+            app:cardCornerRadius="15dp">
 
-            <TextView
-                android:id="@+id/afternoon_drug_box_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@string/afternoon_drug_box_text"
-                android:textColor="#FFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/capsule2_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/syrup2_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/capsule2_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/syrup3_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/syrup2_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/night_drug_box_card"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_margin="8dp"
-        app:cardBackgroundColor="#0D47A1"
-        app:cardCornerRadius="15dp">
+                <ImageView
+                    android:id="@+id/syrup4_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/syrup3_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <android.support.constraint.ConstraintLayout
+                <TextView
+                    android:id="@+id/afternoon_drug_box_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/afternoon_drug_box_text"
+                    android:textColor="#FFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/night_drug_box_card"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#0D47A1"
+            app:cardCornerRadius="15dp">
 
-            <TextView
-                android:id="@+id/night_drug_box_textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:text="@string/night_drug_box_text"
-                android:textColor="#FFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
-
-        </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/add_drug_floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_gravity="center" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-</LinearLayout>
+                <ImageView
+                    android:id="@+id/drug3_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/drug4_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/drug3_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/drug5_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/drug4_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/drug6_imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/encyclopedia_tab"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/drug5_imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/night_drug_box_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/night_drug_box_text"
+                    android:textColor="#FFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_drug_floatingActionButton"
+            android:layout_width="60dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_name" />
+
+    </LinearLayout>
+</ScrollView>
